@@ -17,12 +17,6 @@ ul {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   overflow: hidden;
@@ -31,30 +25,32 @@ ul {
 /* -------------------------------------------------- */
 /* -------------------HEADER------------------------- */
 
-.header-logo-decor {
+.header-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.header-logo {
+.header-logo-decor {
   color: #2e2f42;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .header-menu-link {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .header-menu-link:hover {
@@ -65,16 +61,28 @@ ul {
   color: #404bbf;
 }
 
+.header-menu-link:focus {
+  color: #404bbf;
+}
+
+.header-address {
+  font-style: normal;
+}
+
 .header-address-link {
   color: #434455;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
 .header-address-link:hover {
+  color: #404bbf;
+}
+
+.header-address-link:focus {
   color: #404bbf;
 }
 
@@ -92,9 +100,11 @@ ul {
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
+
 .hero-btn {
   color: #fff;
-  font-family: "Roboto";
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -102,6 +112,15 @@ ul {
   letter-spacing: 0.04em;
   cursor: pointer;
 }
+
+.hero-btn:hover {
+  background-color: #404bbf;
+}
+
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+
 /* ------------------------------------------- */
 
 /* ------------------FEATURES----------------- */
@@ -127,6 +146,13 @@ ul {
 
 /* ------------------------------------------- */
 /* ------------------TEAM--------------------- */
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-item {
+  background-color: #ffffff;
+}
 
 .team-title {
   color: #2e2f42;
@@ -189,26 +215,28 @@ ul {
 .footer {
   background-color: #2e2f42;
 }
-.footer-link {
+.footer-link-decor {
   color: #f4f4fd;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-.footer-link-decor {
+.footer-link {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .footer-text {
   color: #f4f4fd;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
